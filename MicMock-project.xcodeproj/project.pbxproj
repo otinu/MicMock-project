@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2CAE78D439C4DC37E926B921 /* Pods_MicMock_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1F1F7A7AF71CC59516D49D /* Pods_MicMock_project.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		180474502CD70823002DC4C9 /* MicMock-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MicMock-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23394B6717B2CB53D73ABFCE /* Pods-MicMock-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicMock-project.debug.xcconfig"; path = "Target Support Files/Pods-MicMock-project/Pods-MicMock-project.debug.xcconfig"; sourceTree = "<group>"; };
+		297F68C5D27708C6C3FA1296 /* Pods-MicMock-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicMock-project.release.xcconfig"; path = "Target Support Files/Pods-MicMock-project/Pods-MicMock-project.release.xcconfig"; sourceTree = "<group>"; };
+		ED1F1F7A7AF71CC59516D49D /* Pods_MicMock_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicMock_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CAE78D439C4DC37E926B921 /* Pods_MicMock_project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +42,8 @@
 			children = (
 				180474522CD70823002DC4C9 /* MicMock-project */,
 				180474512CD70823002DC4C9 /* Products */,
+				92A89F8C8E5E8B1918A09C3B /* Pods */,
+				8C4E6E9CE871DA07C94FA50E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +55,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8C4E6E9CE871DA07C94FA50E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED1F1F7A7AF71CC59516D49D /* Pods_MicMock_project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92A89F8C8E5E8B1918A09C3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23394B6717B2CB53D73ABFCE /* Pods-MicMock-project.debug.xcconfig */,
+				297F68C5D27708C6C3FA1296 /* Pods-MicMock-project.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -52,9 +79,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1804745E2CD70824002DC4C9 /* Build configuration list for PBXNativeTarget "MicMock-project" */;
 			buildPhases = (
+				8509B116AE3345CE4BF3D0C3 /* [CP] Check Pods Manifest.lock */,
 				1804744C2CD70823002DC4C9 /* Sources */,
 				1804744D2CD70823002DC4C9 /* Frameworks */,
 				1804744E2CD70823002DC4C9 /* Resources */,
+				E1CD93DB45655F3185C8E1DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -64,8 +93,6 @@
 				180474522CD70823002DC4C9 /* MicMock-project */,
 			);
 			name = "MicMock-project";
-			packageProductDependencies = (
-			);
 			productName = "MicMock-project";
 			productReference = 180474502CD70823002DC4C9 /* MicMock-project.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +140,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8509B116AE3345CE4BF3D0C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MicMock-project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1CD93DB45655F3185C8E1DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MicMock-project/Pods-MicMock-project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MicMock-project/Pods-MicMock-project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MicMock-project/Pods-MicMock-project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1804744C2CD70823002DC4C9 /* Sources */ = {
@@ -162,7 +231,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -225,7 +294,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -246,6 +315,7 @@
 		};
 		1804745F2CD70824002DC4C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23394B6717B2CB53D73ABFCE /* Pods-MicMock-project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -275,6 +345,7 @@
 		};
 		180474602CD70824002DC4C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 297F68C5D27708C6C3FA1296 /* Pods-MicMock-project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
