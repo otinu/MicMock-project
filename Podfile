@@ -6,6 +6,5 @@ target 'MicMock-project' do
   use_frameworks!
 
   # Pods for MicMock-project
-  pod 'Alamofire', '~> 5.4'
 
 end
