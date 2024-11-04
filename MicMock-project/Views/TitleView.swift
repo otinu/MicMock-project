@@ -24,7 +24,8 @@ struct TitleView: View {
             
             VStack {
                 // UIパーツ呼び出し
-                MessageBox(message: "タイトル")
+                // 定数ファイルから固定値呼び出し
+                MessageBox(message: Constants.Title.PAGE_NAME)
                 
                 Spacer().frame(height: 100)
                 
