@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct sampleAPIView: View {
-    @StateObject private var viewModel = sampleAPIViewModel()
+struct SampleAPIView: View {
+    @StateObject private var viewModel = SampleAPIViewModel()
 
     var body: some View {
         NavigationStack {
@@ -29,5 +29,5 @@ struct sampleAPIView: View {
 }
 
 #Preview {
-    sampleAPIView()
+    SampleAPIView()
 }

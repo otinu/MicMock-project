@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MicMock_projectApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            sampleAPIView()
+            TitleView()
+                // .environment(\.locale, .init(identifier: "ja"))
+                .environmentObject(AppEnvironment())
         }
     }
 }

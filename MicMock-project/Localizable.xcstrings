@@ -1,0 +1,106 @@
+{
+  "sourceLanguage" : "ja",
+  "strings" : {
+    "English" : {
+
+    },
+    "Hello, World!" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "こんにちわ, 世界"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "안녕하세요, 세계여러분"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你好, 世界"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你好，全世界"
+          }
+        }
+      }
+    },
+    "Users" : {
+
+    },
+    "お名前" : {
+
+    },
+    "タイトル" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "标题"
+          }
+        }
+      }
+    },
+    "タイトルへ戻る" : {
+
+    },
+    "中国語(簡体字)" : {
+
+    },
+    "多言語化ページへ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go to MultiLanguage"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다국어로 이동"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用多种语言"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用多種語言"
+          }
+        }
+      }
+    },
+    "日本語" : {
+
+    },
+    "氏名を入力してください" : {
+
+    },
+    "生年入力へ遷移" : {
+
+    },
+    "生年月日" : {
+
+    }
+  },
+  "version" : "1.0"
+}

@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18E6EDF62CE094BB003B67FE /* develop-memo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18E6EDF52CE094AE003B67FE /* develop-memo.txt */; };
 		2CAE78D439C4DC37E926B921 /* Pods_MicMock_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1F1F7A7AF71CC59516D49D /* Pods_MicMock_project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		180474502CD70823002DC4C9 /* MicMock-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MicMock-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E6EDF52CE094AE003B67FE /* develop-memo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "develop-memo.txt"; sourceTree = "<group>"; };
 		23394B6717B2CB53D73ABFCE /* Pods-MicMock-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicMock-project.debug.xcconfig"; path = "Target Support Files/Pods-MicMock-project/Pods-MicMock-project.debug.xcconfig"; sourceTree = "<group>"; };
 		297F68C5D27708C6C3FA1296 /* Pods-MicMock-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicMock-project.release.xcconfig"; path = "Target Support Files/Pods-MicMock-project/Pods-MicMock-project.release.xcconfig"; sourceTree = "<group>"; };
 		ED1F1F7A7AF71CC59516D49D /* Pods_MicMock_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicMock_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +42,7 @@
 		180474472CD70823002DC4C9 = {
 			isa = PBXGroup;
 			children = (
+				18E6EDF52CE094AE003B67FE /* develop-memo.txt */,
 				180474522CD70823002DC4C9 /* MicMock-project */,
 				180474512CD70823002DC4C9 /* Products */,
 				92A89F8C8E5E8B1918A09C3B /* Pods */,
@@ -118,6 +121,10 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
+				"zh-Hans",
+				"zh-Hant",
+				ko,
 			);
 			mainGroup = 180474472CD70823002DC4C9;
 			minimizedProjectReferenceProxies = 1;
@@ -136,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E6EDF62CE094BB003B67FE /* develop-memo.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +261,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -309,6 +318,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

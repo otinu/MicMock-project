@@ -9,16 +9,13 @@ import SwiftUI
 
 struct TitleView: View {
     
-    @ObservedObject var modelView: MemberViewModel = MemberViewModel()
+    @ObservedObject var viewModel: MemberViewModel = MemberViewModel()
     
-    @State var inputText = ""
+    @State var inputName = ""
+    
+    @EnvironmentObject var environment: AppEnvironment
     
     var body: some View {
-        // NavigationStackの外は画面遷移しない
-        Text("ヘッダー")
-            .font(.largeTitle)
-            .background(.yellow)
-            .edgesIgnoringSafeArea(.all)
         
         NavigationStack {
             
@@ -31,25 +28,36 @@ struct TitleView: View {
                 
                 // データバインドによる、画面の動的変更-----------------
                 TextField("お名前",
-                          text: $inputText,
+                          text: $inputName,
                           prompt: Text("氏名を入力してください"))
                 .frame(width: 500, height: 50)
                 .textFieldStyle(.roundedBorder)
                 .onSubmit {
-                    modelView.inputNameUpdateMember(name: inputText)
+                    viewModel.inputNameUpdateMember(name: inputName)
                 }
                 
-                Text(modelView.member.name)
+                Text(viewModel.member.name)
                     .font(.largeTitle)
                     .foregroundStyle(.blue)
-                Text(String(modelView.member.birthDay))
+                Text(String(viewModel.member.birthDay))
                     .font(.largeTitle)
                     .foregroundStyle(.blue)
+                
+                // 別のViewでデータバインド中のオブジェクト引き継ぎ
+                Spacer().frame(height: 50)
+                NavigationLink(destination: inputBirthday(viewModel: viewModel)) {
+                    Text("生年入力へ遷移")
+                }
+                
                 // ------------データバインド ここまで---------------
                 
-                Spacer().frame(height: 100)
-                NavigationLink(destination: inputBirthday(modelView: modelView)) {
-                    Text("生年入力へ遷移")
+                // アプリ起動中に言語設定切り替え
+                Spacer().frame(height: 50)
+                NavigationLink(destination: MultiLanguageView()
+                    .environmentObject(environment)
+                    .environment(\.locale, .init(identifier: environment.appLocale))
+                ) {
+                    Text("多言語化ページへ")
                 }
             }
         }
@@ -60,4 +68,6 @@ struct TitleView: View {
 
 #Preview {
     TitleView()
+        .environmentObject(AppEnvironment())
+        .environment(\.locale, .init(identifier: "ja"))
 }

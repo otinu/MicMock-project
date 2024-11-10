@@ -8,8 +8,8 @@
 import Foundation
 import Combine
 
-class sampleAPIViewModel: ObservableObject {
-    @Published var model: [sampleAPIModel] = []
+class SampleAPIViewModel: ObservableObject {
+    @Published var model: [SampleAPIModel] = []
     
     // Combineフレームワークで非同期処理をする準備
     private var cancellable: AnyCancellable?
@@ -37,7 +37,7 @@ class sampleAPIViewModel: ObservableObject {
         cancellable = URLSession.shared.dataTaskPublisher(for: url)
         // 受け取ったデータをモデルに変換
             .map { $0.data }
-            .decode(type: [sampleAPIModel].self, decoder: JSONDecoder())
+            .decode(type: [SampleAPIModel].self, decoder: JSONDecoder())
         
         // エラーハンドリング（この場合は空の配列を返す）
             .replaceError(with: [])

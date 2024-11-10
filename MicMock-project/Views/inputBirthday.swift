@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct inputBirthday: View {
-    @ObservedObject var modelView: MemberViewModel
+    @ObservedObject var viewModel: MemberViewModel
     @State var inputBirthDay: Int = 0
     
     var body: some View {
@@ -16,11 +16,11 @@ struct inputBirthday: View {
         
         Spacer().frame(height: 100)
         
-        Text(modelView.member.name)
+        Text(viewModel.member.name)
             .font(.largeTitle)
             .foregroundStyle(.green)
         
-        Text(String(modelView.member.birthDay))
+        Text(String(viewModel.member.birthDay))
             .font(.largeTitle)
             .foregroundStyle(.green)
         
@@ -28,7 +28,7 @@ struct inputBirthday: View {
         .frame(width: 500, height: 50)
         .textFieldStyle(.roundedBorder)
         .onSubmit {
-            modelView.inputBirthdayUpdateMember(birthDay: inputBirthDay)
+            viewModel.inputBirthdayUpdateMember(birthDay: inputBirthDay)
         }
     }
 }
