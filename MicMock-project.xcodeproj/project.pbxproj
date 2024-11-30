@@ -14,6 +14,7 @@
 /* Begin PBXFileReference section */
 		180474502CD70823002DC4C9 /* MicMock-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MicMock-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E6EDF52CE094AE003B67FE /* develop-memo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "develop-memo.txt"; sourceTree = "<group>"; };
+		18E6EE442CEE0990003B67FE /* sample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = sample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		23394B6717B2CB53D73ABFCE /* Pods-MicMock-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicMock-project.debug.xcconfig"; path = "Target Support Files/Pods-MicMock-project/Pods-MicMock-project.debug.xcconfig"; sourceTree = "<group>"; };
 		297F68C5D27708C6C3FA1296 /* Pods-MicMock-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicMock-project.release.xcconfig"; path = "Target Support Files/Pods-MicMock-project/Pods-MicMock-project.release.xcconfig"; sourceTree = "<group>"; };
 		ED1F1F7A7AF71CC59516D49D /* Pods_MicMock_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicMock_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +43,7 @@
 		180474472CD70823002DC4C9 = {
 			isa = PBXGroup;
 			children = (
+				18E6EE442CEE0990003B67FE /* sample.playground */,
 				18E6EDF52CE094AE003B67FE /* develop-memo.txt */,
 				180474522CD70823002DC4C9 /* MicMock-project */,
 				180474512CD70823002DC4C9 /* Products */,

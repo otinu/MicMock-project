@@ -51,7 +51,7 @@ struct TitleView: View {
                 
                 // ------------データバインド ここまで---------------
                 
-                // アプリ起動中に言語設定切り替え
+                // 言語設定切り替え
                 Spacer().frame(height: 50)
                 NavigationLink(destination: MultiLanguageView()
                     .environmentObject(environment)
@@ -59,6 +59,15 @@ struct TitleView: View {
                 ) {
                     Text("多言語化ページへ")
                 }
+                
+                // API呼び出し
+                //  →多言語化表示不要の場合、.environmentの記述は不要
+                Spacer().frame(height: 50)
+                NavigationLink(destination: SampleAPIView()
+                ) {
+                    Text("API呼び出しページへ")
+                }
+                
             }
         }
         
