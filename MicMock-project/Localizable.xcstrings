@@ -1,7 +1,19 @@
 {
   "sourceLanguage" : "ja",
   "strings" : {
+    "$%.2f" : {
+
+    },
+    "API呼び出しページへ" : {
+
+    },
     "English" : {
+
+    },
+    "Fruit Prices" : {
+
+    },
+    "Fruits" : {
 
     },
     "Hello, World!" : {
@@ -31,6 +43,9 @@
           }
         }
       }
+    },
+    "URL指定でのリンク" : {
+
     },
     "Users" : {
 

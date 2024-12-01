@@ -25,6 +25,7 @@ struct SampleListView: View {
             }
             .navigationTitle("Fruits")
             
+            
             List(fruitPrices.keys.sorted(), id: \.self) { key in
                             // キーに対応するバリュー（価格）を表示
                             if let price = fruitPrices[key] {

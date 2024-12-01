@@ -67,7 +67,6 @@ struct TitleView: View {
                 ) {
                     Text("API呼び出しページへ")
                 }
-                
             }
         }
         
