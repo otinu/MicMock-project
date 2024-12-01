@@ -9,10 +9,11 @@ import SwiftUI
 
 struct Sample_State: View {
     
-    @State var number = 0
+    @State var number: Int = 0
     
     var body: some View {
         VStack {
+            Spacer().frame(height: 100)
             
             Text("\(number)")
                 .font(.largeTitle)
@@ -20,7 +21,17 @@ struct Sample_State: View {
             Button("値をプラス") {
                 number += 1
             }
+            
+            
+            
+            NavigationStack {
+                NavigationLink("@Bindingのサンプル") {
+                    Sample_Binding(number: $number)
+                }
+            }
         }
+        
+        
     }
 }
 
