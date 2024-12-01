@@ -52,3 +52,6 @@ ViewModelとModelの認識間違えてるかもしれない
 モーダルウインドウはすごく簡単に作れる
 たぶん、画面全体に覆い被せることもできる
  →　.sheet()
+
+カレントユーザーなどは@Environmentで解決するかも
+https://zenn.dev/en3_hcl/articles/a95baa341d586c
