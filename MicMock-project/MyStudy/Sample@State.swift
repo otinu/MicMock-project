@@ -30,8 +30,6 @@ struct Sample_State: View {
                 }
             }
         }
-        
-        
     }
 }
 
